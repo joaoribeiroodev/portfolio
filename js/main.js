@@ -130,6 +130,34 @@
     }
 
     /* ---------------------------------------------------------------
+       Alternância de tema claro/escuro
+       --------------------------------------------------------------- */
+    const THEME_KEY = "jpr-theme";
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (themeToggle) {
+        themeToggle.setAttribute(
+            "aria-pressed",
+            String(root.getAttribute("data-theme") === "light")
+        );
+
+        themeToggle.addEventListener("click", () => {
+            const isLight = root.getAttribute("data-theme") === "light";
+
+            if (isLight) {
+                root.removeAttribute("data-theme");
+                window.localStorage.setItem(THEME_KEY, "dark");
+                themeToggle.setAttribute("aria-pressed", "false");
+            } else {
+                root.setAttribute("data-theme", "light");
+                window.localStorage.setItem(THEME_KEY, "light");
+                themeToggle.setAttribute("aria-pressed", "true");
+            }
+        });
+    }
+
+    /* ---------------------------------------------------------------
        Copiar e-mail para a área de transferência
        --------------------------------------------------------------- */
     document.querySelectorAll(".copy-btn[data-copy]").forEach((button) => {
