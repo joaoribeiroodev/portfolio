@@ -10,6 +10,12 @@
 
     <title>João Pedro Ribeiro | Infraestrutura & Desenvolvimento</title>
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="João Pedro Ribeiro | Infraestrutura & Desenvolvimento">
+    <meta property="og:description"
+        content="Profissional de TI com experiência em suporte, redes, infraestrutura e desenvolvimento de sistemas.">
+    <meta name="twitter:card" content="summary">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -148,15 +154,16 @@
                     <p>
                         Sou estudante de Técnico em Desenvolvimento de Sistemas pelo
                         SENAI CIMATEC e profissional da área de Tecnologia da Informação,
-                        atualmente atuando como Auxiliar de TI na Internacional Travessias.
+                        atuando atualmente como <strong>Auxiliar de TI</strong>
+                        na Internacional Travessias.
                     </p>
 
                     <p>
-                        Minha experiência envolve suporte técnico, manutenção e
-                        configuração de computadores, sistemas operacionais Windows,
-                        atendimento a usuários, gerenciamento de chamados através do GLPI,
-                        administração de redes e conhecimentos básicos em Active Directory
-                        e infraestrutura.
+                        Minha experiência envolve administração de redes, suporte técnico
+                        e troubleshooting, manutenção e configuração de computadores e
+                        servidores, monitoramento de infraestrutura (Zabbix/Grafana),
+                        virtualização (Proxmox) e conhecimentos em Active Directory e
+                        sistemas Windows/Windows Server.
                     </p>
 
                     <p>
@@ -256,17 +263,16 @@
 
                         <p>
                             Atuação em suporte e infraestrutura de Tecnologia da Informação,
-                            realizando instalação e configuração de computadores e
-                            periféricos, suporte aos usuários, manutenção preventiva,
-                            atualização de sistemas e aplicativos, inventário de
-                            equipamentos, registro e acompanhamento de chamados e suporte
-                            às operações de TI.
+                            administração de redes, sistemas Windows e Active Directory,
+                            monitoramento de links e disponibilidade (Zabbix/Grafana),
+                            manutenção preventiva, inventário de equipamentos e automação
+                            de rotinas internas.
                         </p>
 
                         <p>
-                            Também possuo contato com administração de redes,
-                            sistemas Windows, Active Directory e gerenciamento de
-                            chamados através do GLPI.
+                            Também responsável pela instalação e configuração de
+                            computadores e periféricos, suporte aos usuários e
+                            gerenciamento de chamados através do GLPI.
                         </p>
                     </div>
                 </li>
@@ -313,10 +319,11 @@
                         <li>Fundamentos de redes TCP/IP</li>
                         <li>Windows e Windows Server</li>
                         <li>Active Directory</li>
+                        <li>Virtualização (Proxmox VE)</li>
+                        <li>Monitoramento (Zabbix / Grafana)</li>
+                        <li>Nmap</li>
                         <li>Suporte técnico e troubleshooting</li>
-                        <li>Configuração e manutenção de computadores</li>
                         <li>GLPI e gerenciamento de chamados</li>
-                        <li>Fundamentos de infraestrutura de TI</li>
                     </ul>
                 </div>
 
@@ -379,47 +386,73 @@
 
             <div class="projects-grid">
                 <article class="project-card">
-                    <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <rect x="3" y="4" width="18" height="12" rx="1.5" />
-                        <path d="M8 20h8M12 16v4" />
-                    </svg>
-                    <h3>Sistemas e aplicações</h3>
+                    <div class="project-card__top">
+                        <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="4" y="3" width="16" height="6" rx="1" />
+                            <rect x="4" y="15" width="16" height="6" rx="1" />
+                            <circle cx="8" cy="6" r="0.8" />
+                            <circle cx="8" cy="18" r="0.8" />
+                        </svg>
+                        <span class="project-card__kind">projeto pessoal</span>
+                    </div>
+                    <h3>Homelab de Virtualização</h3>
                     <p>
-                        Desenvolvimento de projetos acadêmicos e pessoais envolvendo
-                        aplicações web, sistemas CRUD, bancos de dados e integração
-                        entre aplicações e serviços.
+                        Servidor de laboratório doméstico com Proxmox VE, organizando
+                        containers LXC isolados por função (monitoramento, aplicações)
+                        para estudo prático de virtualização e administração de
+                        servidores Linux.
                     </p>
+                    <ul class="tag-list">
+                        <li>Proxmox VE</li>
+                        <li>LXC</li>
+                        <li>Linux</li>
+                    </ul>
                 </article>
 
                 <article class="project-card">
-                    <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <rect x="4" y="3" width="16" height="6" rx="1" />
-                        <rect x="4" y="15" width="16" height="6" rx="1" />
-                        <circle cx="8" cy="6" r="0.8" />
-                        <circle cx="8" cy="18" r="0.8" />
-                    </svg>
-                    <h3>Laboratórios de Infraestrutura</h3>
+                    <div class="project-card__top">
+                        <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="5" cy="12" r="2.4" />
+                            <circle cx="19" cy="5" r="2.4" />
+                            <circle cx="19" cy="19" r="2.4" />
+                            <path d="M7 11l10-5M7 13l10 5" />
+                        </svg>
+                        <span class="project-card__kind">projeto corporativo</span>
+                    </div>
+                    <h3>Monitoramento de Rede (Zabbix &amp; Grafana)</h3>
                     <p>
-                        Estudos práticos envolvendo ambientes Windows, redes,
-                        servidores, Docker, bancos de dados e configuração de
-                        ambientes de TI.
+                        Reestruturação do monitoramento dos links de rede da empresa,
+                        com varredura via Nmap para identificar e corrigir checagens de
+                        disponibilidade de hosts que bloqueiam ICMP.
                     </p>
+                    <ul class="tag-list">
+                        <li>Zabbix</li>
+                        <li>Grafana</li>
+                        <li>Nmap</li>
+                    </ul>
                 </article>
 
                 <article class="project-card">
-                    <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="7" cy="7" r="3.2" />
-                        <circle cx="17" cy="17" r="3.2" />
-                        <path d="M9.3 9.3l5.4 5.4" />
-                    </svg>
-                    <h3>Integração entre Desenvolvimento e Infraestrutura</h3>
+                    <div class="project-card__top">
+                        <svg class="project-card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="12" rx="1.5" />
+                            <path d="M8 20h8M12 16v4" />
+                        </svg>
+                        <span class="project-card__kind">projeto corporativo</span>
+                    </div>
+                    <h3>Sistemas Internos de TI</h3>
                     <p>
-                        Utilização de conhecimentos em JavaScript, Node.js, MySQL e
-                        Docker como complemento à formação em infraestrutura,
-                        buscando compreender o ciclo completo de uma aplicação,
-                        desde seu desenvolvimento até o ambiente onde ela é
-                        executada.
+                        Desenvolvimento de aplicações web para a área de TI da empresa
+                        (gestão de demandas, inventário com etiquetas QR Code e
+                        mapeamento de equipamentos por embarcação), aplicando a base em
+                        desenvolvimento para resolver problemas reais de operação e
+                        infraestrutura.
                     </p>
+                    <ul class="tag-list">
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>Supabase</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -433,7 +466,7 @@
                     Busco consolidar minha carreira na área de
                     <strong>Redes e Infraestrutura de TI</strong>, evoluindo
                     profissionalmente para posições como
-                    <strong>Analista de Redes Jr.</strong> e posteriormente
+                    <strong>Analista de Infraestrutura Jr.</strong> e posteriormente
                     direcionando minha carreira para
                     <strong>Cybersecurity</strong>.
                 </p>

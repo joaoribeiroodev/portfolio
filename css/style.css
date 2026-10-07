@@ -653,11 +653,26 @@ svg {
     transform: translateY(-2px);
 }
 
+.project-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
 .project-card__icon {
     width: 26px;
     height: 26px;
     color: var(--signal);
-    margin-bottom: 16px;
+}
+
+.project-card__kind {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    border: 1px solid var(--line);
+    padding: 3px 9px;
+    border-radius: var(--radius-pill);
 }
 
 .project-card h3 {
@@ -667,7 +682,22 @@ svg {
 
 .project-card p {
     font-size: 0.9rem;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag-list li {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--signal);
+    background: var(--signal-soft);
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
 }
 
 /* ---------- objetivo (callout) ---------- */
@@ -786,6 +816,11 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card__top {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .contact-grid {
